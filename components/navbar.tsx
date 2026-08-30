@@ -34,7 +34,7 @@ export function Navbar() {
       <nav className="container-page flex h-16 items-center justify-between">
         <Logo />
 
-        <div className="hidden items-center gap-1 lg:flex">
+        <div className="hidden items-center gap-1 xl:flex">
           {NAV_LINKS.map((link) => {
             const active =
               link.href === "/"
@@ -62,7 +62,7 @@ export function Navbar() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="rounded-lg p-2 text-neutral-700 hover:bg-neutral-100 lg:hidden"
+          className="rounded-lg p-2 text-neutral-700 hover:bg-neutral-100 xl:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
         >
@@ -77,7 +77,7 @@ export function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="overflow-hidden border-t border-neutral-200 bg-white lg:hidden"
+            className="overflow-hidden border-t border-neutral-200 bg-white xl:hidden"
           >
             <div className="container-page flex flex-col gap-1 py-4">
               {NAV_LINKS.map((link) => {

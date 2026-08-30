@@ -49,15 +49,13 @@ export function PlannerEmbed({
       )}
 
       <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm">
-        <div className="overflow-x-auto">
-          <iframe
-            src={PLANNER.previewUrl}
-            title="MSA Fall 2026 Semester Planner"
-            className="w-full"
-            style={{ height, minWidth: "680px", border: "0" }}
-            loading="lazy"
-          />
-        </div>
+        <iframe
+          src={PLANNER.previewUrl}
+          title="MSA Fall 2026 Semester Planner"
+          className="block w-full"
+          style={{ height, border: "0" }}
+          loading="lazy"
+        />
       </div>
 
       <p className="mt-3 text-xs text-neutral-500">

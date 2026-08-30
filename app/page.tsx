@@ -97,7 +97,7 @@ export default function HomePage() {
           />
           <Reveal className="mt-8">
             <div className="rounded-3xl border border-neutral-200 bg-neutral-50 p-4 sm:p-6">
-              <PlannerEmbed height="42vh" showActions={false} />
+              <PlannerEmbed height="60vh" showActions={false} />
               <div className="mt-5 flex justify-center">
                 <Link href="/planner" className="btn-primary">
                   View Full Fall 2026 Planner

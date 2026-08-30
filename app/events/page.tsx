@@ -3,7 +3,6 @@ import Link from "next/link";
 import { ArrowRight, CalendarRange } from "lucide-react";
 import { PageHero, SectionHeading } from "@/components/section-heading";
 import { EventCard } from "@/components/event-card";
-import { Gallery } from "@/components/gallery";
 import { Reveal } from "@/components/reveal";
 import { UPCOMING_EVENTS } from "@/data/events";
 
@@ -58,20 +57,6 @@ export default function EventsPage() {
               </Link>
             </div>
           </Reveal>
-        </div>
-      </section>
-
-      {/* Past events / community */}
-      <section className="section">
-        <div className="container-page">
-          <SectionHeading
-            eyebrow="Past Events"
-            title="Our Community in Action"
-            description="A look at the kinds of events MSA holds throughout the year."
-          />
-          <div className="mt-10">
-            <Gallery />
-          </div>
         </div>
       </section>
     </>
