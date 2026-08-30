@@ -26,7 +26,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
-        display: ["var(--font-display)", "Georgia", "serif"],
+        display: ["var(--font-display)", "Sora", "system-ui", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {

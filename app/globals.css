@@ -4,7 +4,7 @@
 
 :root {
   --font-sans: "Inter", system-ui, sans-serif;
-  --font-display: "Fraunces", Georgia, serif;
+  --font-display: "Sora", system-ui, sans-serif;
 }
 
 /*
@@ -65,7 +65,8 @@
     @apply font-display text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl;
   }
   .font-grandview {
-    font-family: "Grandview", var(--font-sans), system-ui, sans-serif;
+    font-family: "Grandview", var(--font-display), var(--font-sans), system-ui,
+      sans-serif;
   }
 }
 
