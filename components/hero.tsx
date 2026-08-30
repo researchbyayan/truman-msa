@@ -44,7 +44,7 @@ export function Hero() {
             {SITE.university} · {SITE.location}
           </span>
 
-          <h1 className="mt-6 font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="font-grandview mt-6 text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
             Faith. <span className="text-brand-300">Community.</span>
             <br />
             Belonging.

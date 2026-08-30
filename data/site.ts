@@ -22,8 +22,8 @@ export const SITE = {
  * will show a tasteful "Coming Soon" state instead of a broken/fake link.
  */
 export const SOCIAL_LINKS = {
-  instagram: "", // e.g. "https://instagram.com/trumanmsa"
-  groupme: "", // e.g. "https://groupme.com/join_group/..."
+  instagram: "https://www.instagram.com/truman.msa/",
+  groupme: "https://groupme.com/join_group/116443473/wEp2eMe5",
   email: "mailto:es65721@truman.edu",
 };
 
@@ -83,6 +83,7 @@ export const NAV_LINKS = [
   { label: "Planner", href: "/planner" },
   { label: "Leadership", href: "/leadership" },
   { label: "Committees", href: "/committees" },
+  { label: "Minutes", href: "/minutes" },
   { label: "Resources", href: "/resources" },
   { label: "Get Involved", href: "/get-involved" },
 ];

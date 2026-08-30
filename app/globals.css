@@ -7,6 +7,23 @@
   --font-display: "Fraunces", Georgia, serif;
 }
 
+/*
+ * Grandview — used for the hero top-line header.
+ * Grandview is a licensed/commercial typeface (not on Google Fonts), so it is
+ * self-hosted. Drop the font files in /public/fonts/ named:
+ *   Grandview.woff2  (and optionally Grandview.woff)
+ * and the hero headline will render in Grandview automatically. Until the file
+ * is present the browser falls back to the sans stack below — nothing breaks.
+ */
+@font-face {
+  font-family: "Grandview";
+  src: url("/fonts/Grandview.woff2") format("woff2"),
+    url("/fonts/Grandview.woff") format("woff");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -46,6 +63,9 @@
   }
   .section-title {
     @apply font-display text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl;
+  }
+  .font-grandview {
+    font-family: "Grandview", var(--font-sans), system-ui, sans-serif;
   }
 }
 
