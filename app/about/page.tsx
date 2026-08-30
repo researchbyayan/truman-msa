@@ -17,7 +17,7 @@ import { SITE } from "@/data/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about the Muslim Student Association at Truman State University — our mission, purpose, and community.",
+    "Learn about the Muslim Student Association at Truman State University, our mission, purpose, and community.",
 };
 
 const purpose = [
@@ -47,7 +47,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About"
         title="About Truman MSA"
-        description={`MSA is a student organization serving the ${SITE.university} community — a home for Muslim students and a welcoming space for anyone eager to learn.`}
+        description={`MSA is a student organization serving the ${SITE.university} community, a home for Muslim students and a welcoming space for anyone eager to learn.`}
       />
 
       {/* Mission */}

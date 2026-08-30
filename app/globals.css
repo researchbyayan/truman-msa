@@ -8,12 +8,12 @@
 }
 
 /*
- * Grandview — used for the hero top-line header.
+ * Grandview: used for the hero top-line header.
  * Grandview is a licensed/commercial typeface (not on Google Fonts), so it is
  * self-hosted. Drop the font files in /public/fonts/ named:
  *   Grandview.woff2  (and optionally Grandview.woff)
  * and the hero headline will render in Grandview automatically. Until the file
- * is present the browser falls back to the sans stack below — nothing breaks.
+ * is present the browser falls back to the sans stack below, nothing breaks.
  */
 @font-face {
   font-family: "Grandview";

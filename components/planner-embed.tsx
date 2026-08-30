@@ -39,7 +39,7 @@ export function PlannerEmbed({
             title={
               PLANNER.calendarUrl
                 ? "Add MSA events to your calendar"
-                : "Calendar sync coming soon — opens the planner for now"
+                : "Calendar sync coming soon, opens the planner for now"
             }
           >
             <CalendarPlus className="h-4 w-4" />

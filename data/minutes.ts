@@ -29,6 +29,6 @@ export const MEETING_MINUTES: Minutes[] = [
     title: "Executive Board Meeting",
     date: "2026-08-29",
     url: "/minutes/2026-08-29.pdf",
-    summary: "Semester kickoff — outreach, organizational setup, and meeting cadence.",
+    summary: "Semester kickoff, outreach, organizational setup, and meeting cadence.",
   },
 ];

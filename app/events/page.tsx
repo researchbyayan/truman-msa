@@ -19,7 +19,7 @@ export default function EventsPage() {
       <PageHero
         eyebrow="What's Happening"
         title="Events"
-        description="From Jummah to community dinners, guest speakers, and service — here's how to be part of it."
+        description="From Jummah to community dinners, guest speakers, and service, here's how to be part of it."
       />
 
       {/* Upcoming */}
@@ -47,7 +47,7 @@ export default function EventsPage() {
                   See the full Fall 2026 schedule
                 </h2>
                 <p className="mt-3 text-neutral-600">
-                  Every event, date, and detail lives in our semester planner —
+                  Every event, date, and detail lives in our semester planner,
                   embedded right inside the site.
                 </p>
               </div>

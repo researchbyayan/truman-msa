@@ -75,8 +75,8 @@ export default function CommitteesPage() {
           <Reveal className="mt-10">
             <p className="mx-auto max-w-2xl text-center text-sm text-neutral-500">
               MSA grows with its members. As the community expands, new
-              committees — like Events, Religious Affairs, Education, Outreach,
-              and Media — can be added to give even more students a way to lead.
+              committees, like Events, Religious Affairs, Education, Outreach,
+              and Media, can be added to give even more students a way to lead.
             </p>
           </Reveal>
         </div>

@@ -52,7 +52,7 @@ export default function LeadershipPage() {
               different parts support each other.&rdquo;
             </blockquote>
             <p className="mt-6 text-neutral-600">
-              We lead the same way. Every role — and every member — holds a piece
+              We lead the same way. Every role, and every member, holds a piece
               of what makes MSA strong. Service over status, teamwork over titles.
             </p>
           </Reveal>

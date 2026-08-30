@@ -41,24 +41,20 @@ export function Hero() {
           className="max-w-3xl"
         >
           {/* Greeting for everyone who lands here */}
-          <div className="mb-6">
+          <div className="mb-8">
             <p
               lang="ar"
               dir="rtl"
               className="text-left font-display text-2xl font-semibold text-brand-200 sm:text-3xl"
             >
-              السلام عليكم
+              السلام عليكم ورحمة الله وبركاته
             </p>
-            <p className="mt-1 text-sm font-medium tracking-wide text-neutral-300">
-              Assalamu Alaikum — peace be upon you. Welcome.
+            <p className="mt-2 text-sm font-medium italic tracking-wide text-neutral-300">
+              Peace be upon you, with mercy and blessings of Allah.
             </p>
           </div>
 
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-brand-200 backdrop-blur">
-            {SITE.university} · {SITE.location}
-          </span>
-
-          <h1 className="font-grandview mt-6 text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="font-grandview text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
             Faith. <span className="text-brand-300">Community.</span>
             <br />
             Belonging.

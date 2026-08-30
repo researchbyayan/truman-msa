@@ -34,7 +34,7 @@ export default function GetInvolvedPage() {
       <PageHero
         eyebrow="Join MSA"
         title="There’s a place for you in MSA."
-        description="However you like to show up — MSA has room for you. Come as you are."
+        description="However you like to show up, MSA has room for you. Come as you are."
       />
 
       {/* Connect buttons */}
@@ -43,7 +43,7 @@ export default function GetInvolvedPage() {
           <SectionHeading
             center
             eyebrow="Connect"
-            title="Say hello — we'd love to meet you"
+            title="Say hello, we'd love to meet you"
             description="The fastest way to stay in the loop is GroupMe. Follow along on Instagram and reach out any time by email."
           />
           <div className="mx-auto mt-10 max-w-3xl">

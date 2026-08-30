@@ -17,7 +17,7 @@ import { JUMMAH, SITE, CONSTITUTION_URL } from "@/data/site";
 export const metadata: Metadata = {
   title: "Resources",
   description:
-    "Helpful resources for Muslim students at Truman State University — Jummah, the Islamic Center of Kirksville, the MSA Constitution, and more.",
+    "Helpful resources for Muslim students at Truman State University, Jummah, the Islamic Center of Kirksville, the MSA Constitution, and more.",
 };
 
 type Resource = {
@@ -50,7 +50,7 @@ const resources: Resource[] = [
     icon: FileText,
     title: "MSA Constitution",
     description:
-      "Our governing document — mission, membership, structure, and how MSA operates.",
+      "Our governing document, mission, membership, structure, and how MSA operates.",
     href: CONSTITUTION_URL || undefined,
     cta: "View Constitution",
     external: true,
@@ -94,7 +94,7 @@ export default function ResourcesPage() {
       <PageHero
         eyebrow="Resources"
         title="Helpful Resources"
-        description="Everything you might need — Friday prayer, the Islamic Center, our constitution, and more."
+        description="Everything you might need, Friday prayer, the Islamic Center, our constitution, and more."
       />
 
       <section className="section">

@@ -1,7 +1,7 @@
 /**
  * Events data model.
  *
- * This shape is intentionally CMS-friendly — the same fields map cleanly to
+ * This shape is intentionally CMS-friendly, the same fields map cleanly to
  * JSON, Supabase, or the Google Calendar API when you're ready to load events
  * dynamically. For now, edit this file directly.
  *
@@ -20,7 +20,7 @@ export type EventCategory =
 export type MSAEvent = {
   id: string;
   title: string;
-  date?: string; // ISO date string, e.g. "2026-09-12" — omit if not confirmed
+  date?: string; // ISO date string, e.g. "2026-09-12", omit if not confirmed
   time?: string; // e.g. "6:00 PM"
   location?: string;
   description: string;
@@ -30,7 +30,7 @@ export type MSAEvent = {
 };
 
 /**
- * Upcoming events — pulled from the Fall 2026 Planner.
+ * Upcoming events, pulled from the Fall 2026 Planner.
  * Update these as the semester progresses (or as the planner changes).
  */
 export const UPCOMING_EVENTS: MSAEvent[] = [
@@ -39,7 +39,7 @@ export const UPCOMING_EVENTS: MSAEvent[] = [
     title: "Weekly Campus Jummah",
     category: "Religious",
     description:
-      "Friday prayer every week. Everyone is welcome — check GroupMe for weekly updates.",
+      "Friday prayer every week. Everyone is welcome, check GroupMe for weekly updates.",
     time: "3:30 PM",
     location: "Interfaith Center · SUB Down Under",
   },
@@ -48,7 +48,7 @@ export const UPCOMING_EVENTS: MSAEvent[] = [
     title: "General Body Meeting",
     category: "Community",
     description:
-      "Open to all members — updates, plans, and community. Come meet everyone.",
+      "Open to all members, updates, plans, and community. Come meet everyone.",
     date: "2026-09-06",
     time: "8:30 PM",
     location: "VH 1010",
@@ -66,7 +66,7 @@ export const UPCOMING_EVENTS: MSAEvent[] = [
     title: "Fundraising & Philanthropy Week",
     category: "Service",
     description:
-      "A week focused on giving back — fundraising and charitable initiatives.",
+      "A week focused on giving back, fundraising and charitable initiatives.",
     date: "2026-10-11",
   },
   {

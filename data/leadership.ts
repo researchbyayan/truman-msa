@@ -1,5 +1,5 @@
 /**
- * Executive Board — 2026–27 academic year.
+ * Executive Board, 2026–27 academic year.
  *
  * Only add fields you can verify. Leave optional fields undefined and the
  * leadership cards will simply omit them (no fake majors, bios, or emails).

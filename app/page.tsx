@@ -5,6 +5,7 @@ import {
   Users2,
   BookOpen,
   Building2,
+  Instagram,
 } from "lucide-react";
 import { Hero } from "@/components/hero";
 import { JummahSection } from "@/components/jummah-section";
@@ -19,6 +20,8 @@ import { EXECUTIVE_BOARD, ADVISOR } from "@/data/leadership";
 import { FAQ } from "@/data/faq";
 import { LeaderCard } from "@/components/leader-card";
 import { PlannerEmbed } from "@/components/planner-embed";
+import { InstagramGrid } from "@/components/instagram-embed";
+import { RECAP_POSTS, INSTAGRAM_URL, INSTAGRAM_HANDLE } from "@/data/recap";
 
 export default function HomePage() {
   return (
@@ -34,7 +37,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Welcome"
             title="Your Community at Truman"
-            description="MSA brings together Muslim students at Truman State University and ATSU-KCOM — supporting one another in practicing Islam, celebrating the many cultures and traditions within our faith, and building genuine friendship and understanding between Muslims and non-Muslims alike."
+            description="MSA brings together Muslim students at Truman State University and ATSU-KCOM, supporting one another in practicing Islam, celebrating the many cultures and traditions within our faith, and building genuine friendship and understanding between Muslims and non-Muslims alike."
           />
           <Reveal delay={0.1}>
             <div className="grid grid-cols-2 gap-4">
@@ -90,7 +93,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Fall 2026"
             title="What's Happening This Semester?"
-            description="Our full semester planner lives inside the site — dates, events, and everything MSA has lined up."
+            description="Our full semester planner lives inside the site, dates, events, and everything MSA has lined up."
           />
           <Reveal className="mt-8">
             <div className="rounded-3xl border border-neutral-200 bg-neutral-50 p-4 sm:p-6">
@@ -102,6 +105,33 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 7. Recap (live from Instagram) */}
+      <section className="section geo-bg">
+        <div className="container-page">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <SectionHeading
+              eyebrow="Recap"
+              title="Straight from our Instagram"
+              description="Catch up on recent gatherings, prayers, and community moments, posted by MSA."
+            />
+            <Reveal>
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary"
+              >
+                <Instagram className="h-4 w-4" />
+                Follow @{INSTAGRAM_HANDLE}
+              </a>
+            </Reveal>
+          </div>
+          <Reveal className="mt-10">
+            <InstagramGrid urls={RECAP_POSTS} />
           </Reveal>
         </div>
       </section>

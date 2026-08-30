@@ -18,7 +18,7 @@ export const SITE = {
 
 /**
  * Social + communication links.
- * Leave a value as an empty string ("") if the URL isn't ready yet — the UI
+ * Leave a value as an empty string ("") if the URL isn't ready yet, the UI
  * will show a tasteful "Coming Soon" state instead of a broken/fake link.
  */
 export const SOCIAL_LINKS = {
@@ -43,7 +43,7 @@ export const PLANNER = {
     "https://docs.google.com/spreadsheets/d/1KRXhjubA9XWd2TMRr2qlWB6P-Aom1heHuFVk91kUw2A/preview",
   externalUrl:
     "https://docs.google.com/spreadsheets/d/1KRXhjubA9XWd2TMRr2qlWB6P-Aom1heHuFVk91kUw2A/edit?usp=sharing",
-  // Placeholder — wire up an .ics export or Google Calendar subscribe link later.
+  // Placeholder, wire up an .ics export or Google Calendar subscribe link later.
   calendarUrl: "",
 };
 
