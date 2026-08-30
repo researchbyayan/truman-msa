@@ -131,7 +131,7 @@ export default function HomePage() {
             </Reveal>
           </div>
           <Reveal className="mt-10">
-            <InstagramGrid urls={RECAP_POSTS} />
+            <InstagramGrid urls={RECAP_POSTS.slice(0, 3)} />
           </Reveal>
         </div>
       </section>

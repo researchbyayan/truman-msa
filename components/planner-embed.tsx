@@ -48,12 +48,22 @@ export function PlannerEmbed({
         </div>
       )}
 
-      <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm">
+      {/* Content is zoomed out ~20% (scale 0.8). The iframe is sized 125% so
+          that after scaling it fills the container exactly. */}
+      <div
+        className="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm"
+        style={{ height }}
+      >
         <iframe
           src={PLANNER.previewUrl}
           title="MSA Fall 2026 Semester Planner"
-          className="block w-full"
-          style={{ height, border: "0" }}
+          style={{
+            width: "125%",
+            height: "125%",
+            border: "0",
+            transform: "scale(0.8)",
+            transformOrigin: "0 0",
+          }}
           loading="lazy"
         />
       </div>
