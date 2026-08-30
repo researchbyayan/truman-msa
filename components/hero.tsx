@@ -45,7 +45,7 @@ export function Hero() {
             <p
               lang="ar"
               dir="rtl"
-              className="text-left font-display text-2xl font-semibold text-brand-200 sm:text-3xl"
+              className="text-left font-display text-base font-semibold text-brand-200 sm:text-lg"
             >
               السلام عليكم ورحمة الله وبركاته
             </p>
