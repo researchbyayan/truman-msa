@@ -31,7 +31,7 @@ export function Navbar() {
           : "border-b border-transparent bg-white/60 backdrop-blur-sm"
       }`}
     >
-      <nav className="container-page flex h-16 items-center justify-between">
+      <nav className="flex h-16 w-full items-center justify-between px-5 sm:px-8">
         <Logo />
 
         <div className="hidden items-center gap-1 xl:flex">
@@ -79,7 +79,7 @@ export function Navbar() {
             transition={{ duration: 0.25, ease: "easeInOut" }}
             className="overflow-hidden border-t border-neutral-200 bg-white xl:hidden"
           >
-            <div className="container-page flex flex-col gap-1 py-4">
+            <div className="flex w-full flex-col gap-1 px-5 py-4 sm:px-8">
               {NAV_LINKS.map((link) => {
                 const active =
                   link.href === "/"
