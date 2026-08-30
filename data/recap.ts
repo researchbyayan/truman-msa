@@ -17,10 +17,8 @@ export const INSTAGRAM_HANDLE = "truman.msa";
 export const INSTAGRAM_URL = "https://www.instagram.com/truman.msa/";
 
 export const RECAP_POSTS: string[] = [
-  "https://www.instagram.com/p/DcAEGwzDQLo/",
   "https://www.instagram.com/p/DWxmNqEDd2b/",
   "https://www.instagram.com/p/DWxjtEjjZ7k/",
-  "https://www.instagram.com/reel/DVX5R-JClQO/",
   "https://www.instagram.com/p/DVXT8CojSa5/",
-  "https://www.instagram.com/p/DU5vUvIDfKH/",
+  "https://www.instagram.com/reel/DVX5R-JClQO/",
 ];
