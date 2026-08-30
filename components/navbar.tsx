@@ -34,7 +34,7 @@ export function Navbar() {
       <nav className="flex h-16 w-full items-center justify-between px-5 sm:px-8">
         <Logo />
 
-        <div className="hidden items-center gap-1 xl:flex">
+        <div className="hidden items-center gap-0.5 xl:flex">
           {NAV_LINKS.map((link) => {
             const active =
               link.href === "/"
@@ -44,7 +44,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`rounded-full px-3.5 py-2 text-sm font-medium transition-colors ${
+                className={`whitespace-nowrap rounded-full px-2.5 py-2 text-[13px] font-medium transition-colors ${
                   active
                     ? "bg-brand-50 text-brand-800"
                     : "text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900"
@@ -54,7 +54,10 @@ export function Navbar() {
               </Link>
             );
           })}
-          <Link href="/get-involved" className="btn-primary ml-2 px-5 py-2.5">
+          <Link
+            href="/get-involved"
+            className="btn-primary ml-2 whitespace-nowrap px-4 py-2 text-[13px]"
+          >
             Join MSA
           </Link>
         </div>

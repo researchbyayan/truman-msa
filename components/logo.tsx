@@ -18,12 +18,12 @@ export function Logo({ className = "" }: { className?: string }) {
       className={`group flex items-center gap-3 ${className}`}
       aria-label={`${SITE.organizationName} home`}
     >
-      <LogoMark size={44} />
+      <LogoMark size={40} />
       <span className="flex min-w-0 flex-col leading-tight">
-        <span className="whitespace-nowrap font-display text-[13px] font-bold tracking-tight text-brand-800 sm:text-[15px]">
+        <span className="whitespace-nowrap font-display text-[12px] font-bold tracking-tight text-brand-800 sm:text-[13px]">
           Muslim Student Association <span className="text-brand-500">(MSA)</span>
         </span>
-        <span className="whitespace-nowrap text-[9px] font-medium uppercase tracking-[0.18em] text-neutral-500 sm:text-[10px]">
+        <span className="whitespace-nowrap text-[9px] font-medium uppercase tracking-[0.16em] text-neutral-500">
           {SITE.university}
         </span>
       </span>
