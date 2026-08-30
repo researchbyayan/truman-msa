@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { SITE } from "@/data/site";
 
@@ -35,24 +36,36 @@ export function Logo({ className = "" }: { className?: string }) {
  * fallback and also a nice standalone mark.
  */
 export function LogoMark({ size = 40 }: { size?: number }) {
+  const [loaded, setLoaded] = useState(false);
+  const [failed, setFailed] = useState(false);
+
+  const showFallback = failed || !loaded;
+
   return (
     <span
-      className="relative flex shrink-0 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-brand-700 to-brand-950 text-white shadow-sm ring-1 ring-brand-900/10"
+      className={`relative flex shrink-0 items-center justify-center overflow-hidden rounded-xl text-white ${
+        showFallback
+          ? "bg-gradient-to-br from-brand-700 to-brand-950 shadow-sm ring-1 ring-brand-900/10"
+          : ""
+      }`}
       style={{ width: size, height: size }}
       aria-hidden
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/logo.png"
-        alt=""
-        className="h-full w-full object-cover"
-        onError={(e) => {
-          (e.currentTarget as HTMLImageElement).style.display = "none";
-        }}
-      />
-      <span className="pointer-events-none absolute font-display text-sm font-bold">
-        M
-      </span>
+      {!failed && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src="/logo.png"
+          alt=""
+          className="h-full w-full object-contain"
+          onLoad={() => setLoaded(true)}
+          onError={() => setFailed(true)}
+        />
+      )}
+      {showFallback && (
+        <span className="pointer-events-none absolute font-display text-sm font-bold">
+          M
+        </span>
+      )}
     </span>
   );
 }

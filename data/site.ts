@@ -47,7 +47,7 @@ export const PLANNER = {
   calendarUrl: "",
 };
 
-export const CONSTITUTION_URL = ""; // Host the PDF and paste its link here.
+export const CONSTITUTION_URL = "/MSA-Constitution-2025.pdf";
 
 /**
  * Jummah (Friday) prayer information.
