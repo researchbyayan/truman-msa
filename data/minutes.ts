@@ -25,5 +25,10 @@ export type Minutes = {
 };
 
 export const MEETING_MINUTES: Minutes[] = [
-  // Upload documents to /public/minutes/ and list them here (newest first).
+  {
+    title: "Executive Board Meeting",
+    date: "2026-08-29",
+    url: "/minutes/2026-08-29.pdf",
+    summary: "Semester kickoff — outreach, organizational setup, and meeting cadence.",
+  },
 ];
