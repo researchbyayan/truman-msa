@@ -11,7 +11,6 @@ import { JummahSection } from "@/components/jummah-section";
 import { SectionHeading } from "@/components/section-heading";
 import { Reveal } from "@/components/reveal";
 import { EventCard } from "@/components/event-card";
-import { Gallery } from "@/components/gallery";
 import { FAQAccordion } from "@/components/faq-accordion";
 import { CTABanner } from "@/components/cta-banner";
 import { UPCOMING_EVENTS } from "@/data/events";
@@ -104,21 +103,6 @@ export default function HomePage() {
               </div>
             </div>
           </Reveal>
-        </div>
-      </section>
-
-      {/* 7. Community / gallery */}
-      <section className="section geo-bg">
-        <div className="container-page">
-          <SectionHeading
-            center
-            eyebrow="Our Community"
-            title="Moments from MSA"
-            description="From Ramadan iftars to guest speakers and community dinners — here's the kind of community we build together."
-          />
-          <div className="mt-12">
-            <Gallery />
-          </div>
         </div>
       </section>
 

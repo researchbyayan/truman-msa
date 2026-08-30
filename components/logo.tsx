@@ -18,13 +18,13 @@ export function Logo({ className = "" }: { className?: string }) {
       className={`group flex items-center gap-3 ${className}`}
       aria-label={`${SITE.organizationName} home`}
     >
-      <LogoMark />
-      <span className="flex flex-col leading-none">
-        <span className="font-display text-lg font-bold tracking-tight text-brand-800">
-          {SITE.shortName}
+      <LogoMark size={48} />
+      <span className="flex flex-col leading-tight">
+        <span className="font-display text-sm font-bold tracking-tight text-brand-800 sm:text-base">
+          Muslim Student Association (MSA)
         </span>
-        <span className="text-[11px] font-medium uppercase tracking-wider text-neutral-500">
-          Truman State
+        <span className="text-[10px] font-medium uppercase tracking-wider text-neutral-500 sm:text-[11px]">
+          {SITE.university}
         </span>
       </span>
     </Link>
@@ -36,36 +36,28 @@ export function Logo({ className = "" }: { className?: string }) {
  * fallback and also a nice standalone mark.
  */
 export function LogoMark({ size = 40 }: { size?: number }) {
-  const [loaded, setLoaded] = useState(false);
   const [failed, setFailed] = useState(false);
 
-  const showFallback = failed || !loaded;
+  if (failed) {
+    return (
+      <span
+        className="flex shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-brand-700 to-brand-950 font-display text-sm font-bold text-white shadow-sm ring-1 ring-brand-900/10"
+        style={{ width: size, height: size }}
+        aria-hidden
+      >
+        M
+      </span>
+    );
+  }
 
   return (
-    <span
-      className={`relative flex shrink-0 items-center justify-center overflow-hidden rounded-xl text-white ${
-        showFallback
-          ? "bg-gradient-to-br from-brand-700 to-brand-950 shadow-sm ring-1 ring-brand-900/10"
-          : ""
-      }`}
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src="/logo.png"
+      alt="MSA logo"
+      className="shrink-0 object-contain"
       style={{ width: size, height: size }}
-      aria-hidden
-    >
-      {!failed && (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src="/logo.png"
-          alt=""
-          className="h-full w-full object-contain"
-          onLoad={() => setLoaded(true)}
-          onError={() => setFailed(true)}
-        />
-      )}
-      {showFallback && (
-        <span className="pointer-events-none absolute font-display text-sm font-bold">
-          M
-        </span>
-      )}
-    </span>
+      onError={() => setFailed(true)}
+    />
   );
 }

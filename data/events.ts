@@ -29,31 +29,62 @@ export type MSAEvent = {
   tbd?: boolean; // true = details coming soon (shown as a placeholder card)
 };
 
+/**
+ * Upcoming events — pulled from the Fall 2026 Planner.
+ * Update these as the semester progresses (or as the planner changes).
+ */
 export const UPCOMING_EVENTS: MSAEvent[] = [
-  {
-    id: "welcome-fall-2026",
-    title: "Fall Welcome Gathering",
-    category: "Social",
-    description:
-      "Kick off the semester with MSA — meet the community, grab some food, and find out what we have planned. Details will be posted on GroupMe and the Fall 2026 Planner.",
-    tbd: true,
-  },
   {
     id: "weekly-jummah",
     title: "Weekly Campus Jummah",
     category: "Religious",
     description:
-      "Friday prayer every week at the Interfaith Center (SUB Down Under), 3:30 PM. Everyone is welcome. Check GroupMe for weekly updates.",
+      "Friday prayer every week. Everyone is welcome — check GroupMe for weekly updates.",
     time: "3:30 PM",
     location: "Interfaith Center · SUB Down Under",
   },
   {
-    id: "community-dinner",
-    title: "Community Dinner",
+    id: "gen-body-sep-6",
+    title: "General Body Meeting",
     category: "Community",
     description:
-      "A shared meal bringing students together over good food and good company. Date and location to be announced on the semester planner.",
-    tbd: true,
+      "Open to all members — updates, plans, and community. Come meet everyone.",
+    date: "2026-09-06",
+    time: "8:30 PM",
+    location: "VH 1010",
+  },
+  {
+    id: "brotherhood-week",
+    title: "Brotherhood Week",
+    category: "Social",
+    description:
+      "A week of gatherings and activities building community among the brothers.",
+    date: "2026-09-13",
+  },
+  {
+    id: "fundraising-week",
+    title: "Fundraising & Philanthropy Week",
+    category: "Service",
+    description:
+      "A week focused on giving back — fundraising and charitable initiatives.",
+    date: "2026-10-11",
+  },
+  {
+    id: "game-night",
+    title: "Game Night",
+    category: "Social",
+    description: "Games, prizes, and good company. Bring a friend!",
+    date: "2026-10-18",
+    time: "7:00 – 9:00 PM",
+    location: "TBA",
+  },
+  {
+    id: "sisterhood-week",
+    title: "Sisterhood Week",
+    category: "Social",
+    description:
+      "A week of gatherings and programming building community among the sisters.",
+    date: "2026-11-08",
   },
 ];
 

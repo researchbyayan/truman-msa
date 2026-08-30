@@ -70,7 +70,7 @@ export function EventCard({ event }: { event: MSAEvent }) {
         {event.description}
       </p>
 
-      {event.rsvpUrl ? (
+      {event.rsvpUrl && (
         <a
           href={event.rsvpUrl}
           target="_blank"
@@ -80,10 +80,6 @@ export function EventCard({ event }: { event: MSAEvent }) {
           RSVP / Details
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
         </a>
-      ) : (
-        <p className="mt-5 text-sm font-medium text-neutral-400">
-          Details on GroupMe &amp; the planner
-        </p>
       )}
     </article>
   );
